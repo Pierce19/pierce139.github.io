@@ -1,0 +1,279 @@
+body{
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #f5f5f7;
+    line-height: 1.6;
+    margin: 0;
+}
+*,
+*:after,
+*:before
+{
+   -webkit- box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+/*заголовок Блакит*/
+.hr1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #f5f5f7;
+    line-height: 1.6;
+}
+
+             /*HAT!!!*/
+
+/*контейнер верхней панели*/
+.cont1{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+/*шапка с текстом*/
+.hattext{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9991;
+}
+/*Верхняя панель Статичность блока*/
+.hat1 {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9990;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 2em;
+    height: 48px;
+    background: rgba(0,0,0,0.9);
+}
+
+/*pages*/
+.pg1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("/Assets/images/1colorpowderblast.jpg")
+    center no-repeat;
+   -webkit- background-size: cover;
+    background-size: cover;
+}
+
+/*block title*/
+.pg1_inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+/*title open the ....*/
+.pg1_title{
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    color: #f5f5f7;
+    margin-bottom: 65px;
+}
+
+        /*HAT TEXT*/
+.hattext_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.hattext_logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #f5f5f7;
+}
+
+/*NAV*/
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.navlink1{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: #f5f5f7;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+.navlink1:hover {
+   color:#0000FF;
+}
+
+/*button*/
+.btn1{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    color: #f5f5f7;
+    border: 4px solid #f5f5f7;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.btn1:hover{
+    background-color:#f5f5f7;
+    color: black;
+}
+
+
+/*pg2*/
+.pg2scroll{
+    padding: 80px 0;
+}
+.blockr2{
+    background-color: #F8F8F8;
+    margin-top: 15px;
+}
+.selection_header{
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: black;
+}
+.selection_title{
+    font-size: 60px;
+    text-transform: uppercase;
+
+}
+.selection_subtitle{
+    font-size: 20px;
+}
+.selection_text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/*product*/
+.product1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+}
+.product2{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.product_item{
+width: 247px;
+background-color: darkblue;
+    position: relative;
+}
+
+.product_item:hover .product_img img{
+    opacity: 0.1;
+}
+.product_item:hover .product_img{
+    transform: translate3d(-10px, -10px, 0)
+}
+.product_item:hover .product_text{
+    opacity: 1;
+}
+.product_img{
+    background: linear-gradient(to bottom, #40E0D0, #0000ff);
+    transition: transform 0.1s linear;
+}
+.product_img img{
+    display: block;
+    opacity: 0.1s linear;
+}
+.blockr{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.blockr1{
+max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.product_text{
+    width: 100%;
+
+    font-size: 25px;
+    color: #f5f5f7;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 45%;
+    left:-5%;
+    z-index: 2;
+    transform: translate3d(0, -50%,0);
+
+    transition: opacity 0.2s linear;
+
+}
+/*pg3*/
+.pg3scroll{
+    height: 100vh;
+    background:  linear-gradient(rgb(0, 0, 255,0.9), rgba(128,0,128,0));
+}
+
+.selection_title_pg3{
+    text-transform: uppercase;
+    color:black;
+    font-size: 80px;,0
+    line-height: 1;
+    padding: inherit;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: antiquewhite;
+}
+.selection_text_pg3{
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   line-height: 1;
+    margin-bottom: 8px;
+    color: antiquewhite;
+}
+
+.blocks{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.backform{
+    display: flex;
+}
+.backform_item{
+    width: 50%;
+    color: black;
+}
+.block_textr{
+    margin-top: 15px;
+
+}
+
